@@ -1,0 +1,6 @@
+com\jurecki\model\Game.class
+com\jurecki\controllers\LoginController.class
+com\jurecki\model\User.class
+com\jurecki\repository\GamesRepository.class
+com\jurecki\controllers\GamesController.class
+com\jurecki\App.class

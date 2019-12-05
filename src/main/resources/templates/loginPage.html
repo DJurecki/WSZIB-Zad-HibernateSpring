@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>GameDB-Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<p id="hello-text" align="center">Baza gier komputerowych</p>
+<div align="center">
+<form method="post">
+    <input type="text" placeholder="Login" name="login" th:field="*{userKey.login}"><br><br>
+    <input type="text" placeholder="Password" name="password" th:field="*{userKey.password}"><br><br>
+    <input type="submit" value="Zaloguj">
+</form>
+</div>
+</body>
+</html>
