@@ -17,8 +17,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class GamesController {
 
-    @Autowired
     GamesRepository gamesRepository;
+
+    @Autowired
+    public GamesController(GamesRepository gamesRepository) {
+        this.gamesRepository = gamesRepository;
+    }
 
     @RequestMapping(value = "/games", method = RequestMethod.GET)
     public String gamesPage(Model model){
