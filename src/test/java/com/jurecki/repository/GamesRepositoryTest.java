@@ -33,7 +33,7 @@ public class GamesRepositoryTest {
 
     @Test
     void persistGame(){
-        gamesRepository.persistGame(game);
+            gamesRepository.persistGame(game);
         verify(gamesRepository, times(1)).persistGame(any(Game.class));
     }
 
